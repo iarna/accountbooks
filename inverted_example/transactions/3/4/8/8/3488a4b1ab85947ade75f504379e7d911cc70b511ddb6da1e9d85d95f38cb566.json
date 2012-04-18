@@ -1,0 +1,6 @@
+({'3488a4b1ab85947ade75f504379e7d911cc70b511ddb6da1e9d85d95f38cb566': {
+    date: '2012-04-18',
+    memo: 'test transaction from b to a',
+    to: [{ account: 'a', amount: 100}],
+    from: [{ account: 'b', acmount: -100}],
+ })
