@@ -1,4 +1,5 @@
-== Design principles
+Design principles
+=================
 
 Highly loosly coupled system, built on git following the git-ish unix-ish
 philosophy of small tools, doing one thing.
@@ -15,7 +16,8 @@ Data storage using hashed filesystem directories and JSON data files.
 
 Designed to make common merge conditions easy to integrate.
 
-== Scalability
+Scalability
+===========
 
 While the intitial intent is for what might be better called micro-business,
 where there's an owner and perhaps a few contractors or part time employees,
@@ -57,7 +59,8 @@ doing a full scan in one or the other index anyway?  Doubtful.
 
 What kind of searching is desirable? Necessary?
 
-== Todo
+Todo
+====
 
 Gather some basic user stories for different use cases, particularly those that
 involve concurrency and thus imply merging. 
@@ -67,7 +70,8 @@ needs actually are in a more realistic form then a feature list.
 
 ---
 
-== Infrastructure
+Infrastructure
+==============
 
 * What can vary between different portions of the same transaction?
   * Date?
@@ -89,7 +93,8 @@ needs actually are in a more realistic form then a feature list.
 * Is a month the smallest unit that can be closed?
 * Is closing a year different then closing 12 months individually?
 
-== Data integrity tools
+Data integrity tools
+====================
 
 * Every storage design will have data integrity concerns, at least, around
   indexes.  From the start there should be tools to verify this and declare
@@ -97,7 +102,8 @@ needs actually are in a more realistic form then a feature list.
 
 ---
 
-== User interface requirements
+User interface requirements
+===========================
 
 * What data entry mechnisms are required?
 
@@ -128,7 +134,8 @@ needs actually are in a more realistic form then a feature list.
 
 ---
 
-== Import / Export
+Import / Export
+===============
 
 * Obvious formats:
   * IIF/QIF
@@ -146,7 +153,8 @@ needs actually are in a more realistic form then a feature list.
 
 ---
 
-== Other thoughts
+Other thoughts
+==============
 
 * It seems desirable to me to have fully offline modes of operation.  This
   implies either a native application or a full offline JavaScript version
